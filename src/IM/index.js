@@ -1,6 +1,7 @@
 import React , {Component} from 'react';
 import { notification,Icon,LocaleProvider } from 'antd';
 import Left from './left';
+import Right from './right';
 import zhCN from 'antd/lib/locale-provider/zh_CN';
 import './im.less';
 import '../style/index.less';
@@ -15,7 +16,6 @@ export default class Mian extends React.Component {
 
   componentDidMount(){
     var that = this;
-
   }
 
 
@@ -26,6 +26,7 @@ export default class Mian extends React.Component {
         <div className="main">
            <div className='app'>
               <Left />
+              <Right />
            </div>
         </div>
       </LocaleProvider>

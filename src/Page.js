@@ -13,7 +13,7 @@ export default class Page extends Component {
     return (
       <Router>
         <Switch>
-            {!globals.getCookies('isLogin') ? <Route exact path="/" render={() => <Redirect to="/erp/home" push />} /> : <Route exact path="/" render={() => <Redirect to="login" push />} />}
+            {globals.getCookies('isLogin') ? <Route exact path="/" render={() => <Redirect to="/erp/home" push />} /> : <Route exact path="/" render={() => <Redirect to="login" push />} />}
             <Route path="/erp" component={IM} />
             <Route path="/erp" component={IM} />
             <Route path="/404" component={NotFound} />
